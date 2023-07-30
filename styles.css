@@ -1,0 +1,107 @@
+:root {
+    /* Background Colors */
+    --bg-main-blue: hsl(233, 47%, 7%);
+    --bg-card-blue: hsl(244, 38%, 16%);
+    --bg-soft-violet: hsl(277, 64%, 61%);
+
+    /* Font Colors */
+    --heading-color:  hsl(0, 0%, 100%);
+    --p-color: hsla(0, 0%, 100%, 0.75);
+    --stat-text-color: hsla(0, 0%, 100%, 0.6);
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main-blue);
+    font-family: 'Inter', sans-serif;
+}
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    width: 1110px;
+    height: 446px;
+    color: white;
+    background-color: var(--bg-card-blue);
+    margin: 177px 165px;
+    border-radius: 8px;
+}
+
+.left-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 72px;
+}
+
+.left-card h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 71px 0 25px 0;
+    width: 403px;
+}
+
+.left-card h1 span {
+    color: var(--bg-soft-violet);
+}
+
+.left-card > p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+    width: 374px;
+    margin-bottom: 72px;
+}
+
+.stats {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+
+}
+
+.stats > div > p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stats span {
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+
+.right-card {
+    width: 50%;
+    background: linear-gradient(var(--bg-card-blue), var(--bg-soft-violet) url(images/) )
+    overflow: hidden;
+}
+
+.right-card > img {
+    opacity: 0.5;
+}
+
+
+
+/* Footer */
+
+/* .attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} */
